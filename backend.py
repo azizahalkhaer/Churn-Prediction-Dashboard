@@ -3,7 +3,7 @@ import pandas as pd
 
 # 1. Hanya load XGBoost (Tidak perlu scaler!)
 try:
-    model_xgb = joblib.load('models/xgb_model.pkl')
+    model_xgb = joblib.load('xgb_model.pkl')
 except Exception as e:
     print(f"Error loading model: {e}")
 
