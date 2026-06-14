@@ -24,7 +24,7 @@ elif 'page' not in st.session_state:
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('data/Customer-Churn-Records.csv')
+        df = pd.read_csv('Customer-Churn-Records.csv')
         df['Status'] = df['Exited'].map({0: 'Retained', 1: 'Churned'})
         return df
     except:
